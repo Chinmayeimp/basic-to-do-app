@@ -1,0 +1,8 @@
+function addTodo() {
+    const todoList = document.getElementById('todo-list');
+    const newTodo = document.getElementById('new-todo').value;
+    const listItem = document.createElement('li');
+    listItem.textContent = newTodo;
+    todoList.appendChild(listItem);
+    document.getElementById('new-todo').value = '';
+}
